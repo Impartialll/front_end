@@ -10,18 +10,39 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
     <style>
-      .rounded-img {
-        width: 60%;
+      .card {
+        border-radius: 1em;
+        text-align: center;
+        padding: 1em;
+      }
+      .card:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+      .card img {
         border-radius: 50%;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-        padding: 0.6em;
-        margin-bottom: 1em;
+        width: 60%;
+        margin: auto;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+      .btn {
+        background-color: rgb(100, 100, 100);
+        border-color: rgb(90, 90, 90);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .btn:hover {
+        background-color: rgb(37, 37, 37);
+        border-color: rgb(27, 27, 27);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       }
     </style>
   </head>
@@ -45,34 +66,85 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link" aria-current="page" href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="/">Favourite places</a>
+              <a class="nav-link active" href="places.html">Favourite places</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <div class="container text-center my-5">
-      <div class="row">
-        <div class="col-lg-6 col-md-8 mx-auto">
-          <img class="rounded-img" src="img.jpg" alt="User" />
-          <h1 class="fw-light">Max Melnychuk</h1>
-          <p class="lead text-muted">
-            I am excited to study Front-end. In this HTML course i can build my
-            personal website
-          </p>
-          <a href="https://google.com" target="_blank" class="btn btn-primary">
-            Google
-          </a>
-          <a
-            href="https://youtube.com"
-            target="_blank"
-            class="btn btn-secondary"
-          >
-            YouTube
-          </a>
+    <div class="container my-5">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://picsum.photos/id/1015/300"
+              class="card-img-top"
+              alt="River"
+            />
+            <div class="card-body">
+              <h5 class="card-title">River</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+                quos non eveniet enim ratione minima eos necessitatibus totam
+                delectus voluptate.
+              </p>
+              <a
+                href="https://picsum.photos/id/1015/1500"
+                class="btn btn-primary"
+                target="_blank"
+                >Large photo</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://picsum.photos/id/1016/300"
+              class="card-img-top"
+              alt="Mountains"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Mountains</h5>
+              <p class="card-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus
+                possimus provident temporibus dolore quos itaque aut placeat
+                ducimus mollitia quis.
+              </p>
+              <a
+                href="https://picsum.photos/id/1016/1500"
+                class="btn btn-primary"
+                target="_blank"
+                >Large photo</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://picsum.photos/id/1018/300"
+              class="card-img-top"
+              alt="Way"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Way</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. In
+                nostrum autem perspiciatis itaque animi eligendi sed quam
+                facilis inventore ipsa.
+              </p>
+              <a
+                href="https://picsum.photos/id/1018/1500"
+                class="btn btn-primary"
+                target="_blank"
+                >Large photo</a
+              >
+            </div>
+          </div>
         </div>
       </div>
     </div>
